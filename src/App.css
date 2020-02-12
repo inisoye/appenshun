@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "BioRhyme", monospace;
+  color: #423e37;
+
+  text-align: right;
+}
+
+body {
+  font-size: 10px;
+}
+
+.full-wrapper {
+  height: 654px;
+}
+
+.head-wrapper {
+  border-bottom: 0px;
+  background-color: #fcd757;
+  background-color: #ebc951;
+  height: 20%;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.main-title {
+  font-family: syne-extra, sans-serif;
+  margin-bottom: 0.3em;
+  font-size: 2.7em;
+}
+
+.subtitle {
+  font-size: 1.3em;
+  /* margin: 0 30px; */
+  font-weight: 700;
+}
+
+.name-input-container,
+.select-container,
+.view-result {
+  height: 20%;
+}
+
+.name-input,
+.select {
+  background: #f5f4e7;
+  border: 1px solid #423e37;
+
+  height: 100%;
+  width: 100%;
+  padding-right: 5%;
+
+  font-size: 2.5em;
+  font-weight: 300;
+  text-align-last: center;
+  text-align-last: right;
+}
+
+.name-input::placeholder {
+  color: #423e37;
+}
+
+.select {
+  cursor: pointer;
+}
+
+.options {
+  font-family: "BioRhyme", monospace;
+  font-weight: 300;
+}
+
+.age-select {
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+.view-result {
+  width: 100%;
+  border: 0px;
+  background-color: #423e37;
+  color: #f5f4e7;
+  font-family: syne-bold, sans-serif;
+  font-size: 3.4em;
+  cursor: pointer;
+}
+
+.view-result:hover {
+  opacity: 0.9;
+}
+
+.head-wrapper,
+.view-result {
+  padding-right: 5%;
+}
+
+.modal {
+  position: absolute;
+  top: 130.8px;
+
+  background-color: #d6d5c7;
+  width: 100%;
+  height: 60%;
+  height: 392.4px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 5%;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 9%;
+  height: 35.3px;
+  width: 37%;
+
+  border: 3px solid #423e37;
+  border-top: 0px;
+  background: #c7c8d6;
+  font-family: syne-bold, sans-serif;
+  font-size: 2.1em;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  opacity: 0.6;
+}
+
+.modal-heading {
+  margin-bottom: 10vh;
+  font-family: syne-bold, sans-serif;
+  font-size: 3.6em;
+}
+
+.modal-text {
+  font-size: 2.1em;
+}
+
+.blur {
+  filter: blur(10px);
+  background: #f5f4e7;
+  color: #423e37;
+}
+
+@media only screen and (min-height: 654px) {
+  .full-wrapper {
+    height: 100vh;
+  }
+
+  .modal {
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-close {
+    height: 9%;
+  }
+}
+
+@media only screen and (max-width: 319px) {
+  body {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 256px) {
+  body {
+    font-size: 7px;
+  }
+}
+@media only screen and (min-width: 670px) {
+  body {
+    font-size: 12px;
+  }
+
+  .main-title {
+    font-size: 3.5em;
+    margin-bottom: 0.1em;
+  }
+}
+
+@media only screen and (min-width: 749px) {
+  .modal-close {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    font-size: 12px;
+  }
+
+  .main-title {
+    font-size: 5.5em;
+    margin-bottom: 0;
+  }
+
+  .name-input,
+  .select {
+    font-size: 3em;
+  }
+
+  .view-result {
+    font-size: 4em;
+  }
+}
